@@ -6,7 +6,7 @@
 /*   By: gwinnink <gwinnink@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 13:45:03 by gwinnink          #+#    #+#             */
-/*   Updated: 2022/12/01 11:28:05 by gwinnink         ###   ########.fr       */
+/*   Updated: 2022/12/07 12:16:35 by gwinnink         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+# include <stdio.h>
 # include <stdbool.h>
-// # include "get_next_line/get_next_line.h"
+
+# define DEBUG(x) printf("<%s>\t%s() %s:%d\n", x, __func__, __FILE__, __LINE__)
 
 typedef struct s_list
 {
